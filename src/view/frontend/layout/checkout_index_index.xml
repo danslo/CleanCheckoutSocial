@@ -19,6 +19,7 @@
                                         <item name="email-step" xsi:type="array">
                                             <item name="children" xsi:type="array">
                                                 <item name="social-login" xsi:type="array">
+                                                    <item name="sortOrder" xsi:type="string">100</item>
                                                     <item name="component" xsi:type="string">Rubic_CleanCheckoutSocial/js/view/social-login</item>
                                                     <item name="displayArea" xsi:type="string">login-methods</item>
                                                 </item>
