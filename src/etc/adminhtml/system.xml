@@ -55,21 +55,42 @@
                         <field id="enabled">1</field>
                     </depends>
                 </field>
-                <field id="enable_google" translate="label" type="select" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <field id="enable_instagram" translate="label" type="select" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enable Instagram</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="instagram_key" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Instagram Key</label>
+                    <depends>
+                        <field id="enable_instagram">1</field>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="instagram_secret" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Instagram Secret</label>
+                    <depends>
+                        <field id="enable_instagram">1</field>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="enable_google" translate="label" type="select" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Enable Google</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <depends>
                         <field id="enabled">1</field>
                     </depends>
                 </field>
-                <field id="google_key" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <field id="google_key" translate="label" type="text" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Google Key</label>
                     <depends>
                         <field id="enable_google">1</field>
                         <field id="enabled">1</field>
                     </depends>
                 </field>
-                <field id="google_secret" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <field id="google_secret" translate="label" type="text" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Google Secret</label>
                     <depends>
                         <field id="enable_google">1</field>

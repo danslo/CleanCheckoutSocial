@@ -30,6 +30,7 @@ class SocialLoginService
     const PROVIDERS = [
         'twitter',
         'facebook',
+        'instagram',
         'google'
     ];
 
