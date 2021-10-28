@@ -61,6 +61,7 @@ class CheckoutConfigProvider implements ConfigProviderInterface
                 'url'      => $this->url->getUrl('clean_checkout/social/authenticate'),
                 'twitter'  => $this->isProviderEnabled('twitter'),
                 'facebook' => $this->isProviderEnabled('facebook'),
+                'instagram' => $this->isProviderEnabled('instagram'),
                 'google'   => $this->isProviderEnabled('google')
             ]
         ];
